@@ -7,12 +7,13 @@ html {
 
 body {
     color: #ebebeb;
-    background: #121212;
+    background: #000000;
 }
 
 header#banner a {
-    color: #e0e0e0;
+    color: #000000;
     text-decoration: none;
+    background-color: #eb00fb;
 }
 
 header#banner nav ul li a {
@@ -28,7 +29,7 @@ main#content p {
 }
 
 main#content hr {
-    background: #5c5c5c;
+    background: #000000;
 }
 
 main#content #toc h4 {
@@ -46,6 +47,11 @@ main#content ul#posts li a:hover {
 main#content header#post-header div {
     color: #a7a7a7;
 }
+
+.chroma {
+    background-color: transparent !important;
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}

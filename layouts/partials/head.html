@@ -13,7 +13,6 @@
 
     {{ $resources = $resources | append (resources.Get "css/main.css") -}}
     {{ $resources = $resources | append (resources.Get "css/custom.css") -}}
-        
 
     {{ $resources = $resources | append (resources.Get "css/min770px.css") -}}
 
@@ -27,6 +26,7 @@
     {{ end -}}
 
     {{ $css := $resources | resources.Concat "css/style.css" | minify }}
+    {{ $css := $resources | resources.Concat "css/hack.css" | minify }}
     {{ printf `<link rel="stylesheet" href="%s">` $css.RelPermalink | safeHTML }}
 
     <title>{{ .Title }}</title>
