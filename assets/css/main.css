@@ -125,7 +125,7 @@ main#content ul#posts small {
 }
 
 main#content ul#posts li a {
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 main#content ul#posts li a:hover {
