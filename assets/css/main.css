@@ -1,5 +1,6 @@
 *, *:before, *:after {
     box-sizing: border-box;
+    cursor: url(/cursor.png), auto;
 }
 
 html {
@@ -276,3 +277,4 @@ footer#footer {
     color: #949494;
     margin: 40px 0;
 }
+
