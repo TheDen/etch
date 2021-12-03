@@ -1,6 +1,5 @@
 *, *:before, *:after {
     /* box-sizing: border-box; */
-    cursor: url(/static/cursor.png), auto;
 }
 
 html {
