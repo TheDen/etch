@@ -27,7 +27,7 @@
 
     {{ $css := $resources | resources.Concat "css/style.css" | minify }}
     {{ $css := $resources | resources.Concat "css/hack.css" | minify }}
-    {{ printf `<link rel="stylesheet" href="%s">` $css.RelPermalink | safeHTML }}
+    {{ printf `<link rel="stylesheet" href="%s">` $css | safeHTML }}
 
     <title>{{ .Title }}</title>
 </head>
